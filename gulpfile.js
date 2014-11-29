@@ -182,7 +182,10 @@ gulp.task('browserify', function(callback) {
 });
 
 // Rerun tasks when a file changes
-gulp.task('watch', ['setWatch', 'browserify', 'sass', 'images']);
+gulp.task('watch', ['setWatch', 'browserify'], function() {
+  gulp.watch(config.sass.src, ['sass'])
+  gulp.watch(config.images.src, ['images'])
+  });
 
 // The default task (called when you run `gulp` from cli)
 gulp.task('default', ['watch'])

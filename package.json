@@ -24,7 +24,7 @@
     "envify": "^3.0.0",
     "jest-cli": "~0.1.17",
     "reactify": "^0.15.2",
-    "uglify-js": "~2.4.15",
+    "uglify-js": "~3.13.4",
     "watchify": "^2.1.1",
     "gulp-sass": "^1.2.3",
     "gulp-changed": "^0.4.1",
